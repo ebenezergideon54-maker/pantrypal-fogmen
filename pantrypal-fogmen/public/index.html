@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PantryPal — Cook what you have</title>
+<meta name="description" content="PantryPal helps you turn the ingredients already in your kitchen into real recipes, and turns your cooking into measurable impact with Fogmen." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥘</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div id="toast-stack" class="toast-stack" aria-live="polite"></div>
+
+  <header class="topbar" id="topbar" style="display:none;">
+    <a href="#/home" class="wordmark">
+      <span class="wordmark-mark">p</span>
+      <span>pantrypal</span>
+    </a>
+    <nav class="toplinks" id="toplinks">
+      <a href="#/home" data-route="home">Kitchen</a>
+      <a href="#/saved" data-route="saved">Saved</a>
+      <a href="#/impact" data-route="impact">Our impact</a>
+    </nav>
+    <div class="topbar-actions">
+      <button id="theme-toggle" class="icon-btn" title="Toggle theme" aria-label="Toggle theme">◐</button>
+      <div id="auth-slot"></div>
+    </div>
+  </header>
+
+  <main id="app" class="app"></main>
+
+  <nav class="bottomnav" id="bottomnav">
+    <a href="#/home" data-route="home"><span>🏠</span><small>Kitchen</small></a>
+    <a href="#/saved" data-route="saved"><span>♡</span><small>Saved</small></a>
+    <a href="#/impact" data-route="impact"><span>◍</span><small>Impact</small></a>
+    <a href="#/support" data-route="support"><span>🤝</span><small>Fogmen</small></a>
+  </nav>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
